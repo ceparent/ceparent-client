@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="css/blog.css">
+<header id="blog-header" class="default-primary-color">
+
+    <h1 id="blog-title" class="text-primary-color">Developer Blog</h1>
+    <h2 id="blog-subtitle" class="text-primary-color">Charles-Étienne Parent</h2>
+
+    <ul id="blog-subnav" class="nav nav-tabs">
+        <li role="presentation" class="active">
+            <a ng-href="#/">
+                Recent
+            </a>
+        </li>
+        <li role="presentation">
+            <a ng-href="#/">
+                Archive
+            </a>
+        </li>
+        <li role="presentation">
+            <a ng-href="#/">
+                Subscribe
+            </a>
+        </li>
+    </ul>
+</header>
+
+<section class="container">
+    <article ng-repeat="article in articles" class="row blog-article">
+
+        <div class="article-title">{{article.title}}</div>
+        <div class="article-date">{{article.date}}</div>
+
+
+        <p class="article-content">
+
+        <div ng-code>$scope.fakeload = function(){
+for(var i = 0; i < 3; i++){
+    $scope.articles.push({
+            "title":"Teaching for learning - my first post",
+         });
+    }
+}</div>
+
+
+            {{article.content}}
+        </p>
+
+        <input type="button" value="Read more" class="btn read-more">
+    </article>
+
+</section>

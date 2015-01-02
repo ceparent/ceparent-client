@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="ceparent" >
+<head>
+    <!-- base -->
+    <script src="libs/jquery-2.1.1.min.js"></script>
+    <script src="libs/modernizr.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+
+    
+    <!-- angularjs -->
+    <script src="libs/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.js"></script>
+    <script src="libs/ui-bootstrap.min.js"></script>
+
+    <!-- syntax highlighting -->
+    <script src="libs/prettify.js"></script>
+    <link rel="stylesheet" href="css/prettify.sons-of-obsidian.css">
+    
+    <!-- app -->
+    <script src="controllers/BlogController.js"></script>
+    <script src="controllers/HomeController.js"></script>
+    <script src="controllers/ContactController.js"></script>
+    <script src="controllers/ProjectController.js"></script>
+    <script src="controllers/ProjectDetailController.js"></script>
+    <script src="app.js"></script>
+    
+    <!-- fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/palette.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <title ng-bind="title"></title>
+</head>
+<body>
+    <div ng-include="'templates/navbar.html'"></div>
+    <div ng-view></div>
+    <div ng-include="'templates/footer.html'" ng-hide="hideFooter"></div>
+</body>
+</html>

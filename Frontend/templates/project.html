@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="css/project.css">
+<header id="project-header"  class="default-primary-color">
+    <h1 id="project-title" class="text-primary-color">My projects</h1>
+</header>
+<div class="container">
+
+    <div ng-repeat="project in projects" class="project col-md-4">
+        <a ng-href="#/projects/detail?id={{ project.id }}">
+            <img ng-src="{{project.imageURL}}" class="img-responsive">
+            <span class="project-description">{{project.description}}</span>
+        </a>
+    </div>
+
+</div>

@@ -1,0 +1,119 @@
+#home-header{
+    padding: 1.5em;
+    text-align: center;
+}
+
+#home-title{
+    font-size: 4em;
+}
+
+.row-content{
+    text-align: center;
+}
+
+.vertical-divider{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#profil{
+    padding: 2em;
+    text-align: center;
+}
+#profil img{
+    border: 0.5em solid #388E3C;
+    margin-bottom: 0.5em;
+}
+
+.social-button{
+    width:100%;
+    margin-bottom: 0.5em;
+    background-color: #388E3C;
+    color: white;
+    font-size: 1.5em;
+}
+.social-button i{
+    font-size: 1.5em;
+    float: left;
+}
+.social-button span{
+    display:inline-block;
+    vertical-align:middle;
+}
+.social-link{
+    color: white;
+}
+.social-link:hover, .social-link:focus{
+    text-decoration: none;
+}
+.social-button:hover{
+    background:#4CAF50;
+}
+
+#about-me{
+    font-size: 1.15em;
+}
+
+
+.about-icon{
+    text-align: center;
+    font-size: 8em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+
+.about-content{
+    text-align: justify;
+}
+.about-content p{
+    text-indent: 2em;
+}
+.about-content a{
+    color: #4CAF50;
+    font-weight: bolder;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.content-highlight{
+    color: #4CAF50;
+    font-weight: bolder;
+}
+
+.about-row{
+    margin-bottom: 2em;
+}
+
+@media (max-width:990px){
+
+    #home-header{
+        padding-top: 5em;
+    }
+
+    .social-button{
+        font-size: 5em;
+    }
+    #about-me{
+        font-size: 2em;
+    }
+
+    .about-content p{
+        margin-bottom: 2em;
+    }
+
+}
+
+@media (max-width:700px){
+    body{
+        padding-top: 15em;
+    }
+    #home-header{
+        display: none;
+        margin-bottom: 10em;
+    }
+
+    .social-button{
+        font-size: 3em;
+    }
+}

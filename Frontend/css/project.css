@@ -1,0 +1,25 @@
+.project-page-title{
+    font-size: 3em;
+}
+
+.project{
+    padding: 1em;
+}
+
+.project-description{
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    top:2em;
+    left:2em;
+}
+
+#project-header{
+    padding: 1.5em;
+    text-align: center;
+}
+
+#project-title{
+    font-size: 4em;
+}
