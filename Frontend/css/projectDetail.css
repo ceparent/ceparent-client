@@ -1,0 +1,35 @@
+#project-header{
+    padding: 1.5em;
+    text-align: center;
+}
+
+#project-title{
+    font-size: 4em;
+}
+
+.project-img{
+    border: 1em solid black;
+}
+
+.project-info{
+    padding: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.project-info a{
+    color: #388E3C;
+}
+.project-info a:hover,
+.project-info a:active{
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+
+.project-features ul li i{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.container ul li{
+    text-align: left;
+}
